@@ -1,11 +1,12 @@
 #include <iostream>
 #include <string>
 
-int dummy_main() {
-    // Complete everything in this program.
-    // Compile and execute the program without errors.
 
-    // Complete the following variables by using the correct types for the data.
+int dummy_main() {
+    // このプログラムに書かれているすべての手順を完了してください。
+    // プログラムをコンパイルして実行してください (エラーが出ない状態にしてください)。
+
+    // データに適した型を使用して、次の変数の宣言と初期化を完成させてください。
     int pizzaSlices = 12;
     float pi = 3.14159f;
     long long starsInTheUniverse = 1234567890LL;
@@ -15,30 +16,38 @@ int dummy_main() {
     bool thisIsTrue = true;
     bool thisIsAlsoTrue = thisIsTrue;
 
-    // On the next three lines, declare and initialize a new variable on each line. Each variable must be a different data type.
-    // variable #1 here
-    // variable #2 here
-    // variable #3 here
+    // 新しい変数を3つ宣言して初期化してください (3行で記述、1行につき1つの変数)。各変数のデータ型が異なるようにしてください。
+    // ここに変数1を記述
+    int one = 1;
+    // ここに変数2を記述
+    bool valid_flag = true;
+    // ここに変数3を記述
+    float half = 0.5f;
 
-    // Complete these arrays by giving them the correct data type.
+    // 正しいデータ型を指定して次の配列を完成させてください。
     int myArray[] = {1, 2, 3, 4};
     float anotherArray[] = {3.5, 1.2, 6.7};
 
-    // Make your own array on the next line. It should contain at least 5 numbers. The numbers can be any number data type, but they must all be the same data type.
+    // 独自の配列を作成し (1行で記述)、そこに5個以上の数値を格納します。数値のデータ型はどれでもかまいませんが、すべて同じデータ型にしてください。
+    int myArray1[] = {1, 2, 3, 4, 5};
 
-    // This array should not use `int` because it stores big numbers. What data type is better?
+    // この配列には大きな数値を格納するので、`int` 型は適していません。どのデータ型が適切ですか。
     long long bigNumbers[] = {500000, 700000, 800000};
+    int64_t bigNumbers2[] = {500000, 700000, 800000};
 
-    // Use static_cast to change 'sizeOfCesiumAtom' to an int. Use 'static_cast' on the line after sizeOfCesiumAtom.
+    // static_castを使用して、`sizeOfCesiumAtom` をint型に変更してください。`static_cast` は、sizeOfCesiumAtomの次の行に記述してください。
     double sizeOfCesiumAtom = 0.267;
     int sizeOfCesiumAtomCast = static_cast<int>(sizeOfCesiumAtom);
 
-    // Make three constant variables. You can use any data type, but each variable must be a different data type.
-    // constant variable #1 here
-    // constant variable #2 here
-    // constant variable #3 here
+    // 3つの定数変数を作成してください。データ型はどれでもかまいませんが、各変数のデータ型が異なるようにしてください。
+    // ここに定数変数1を記述
+    constexpr double kMs2Sec{0.001};
+    // ここに定数変数2を記述
+    const int kSec2Msec{1000};
+    // ここに定数変数3を記述
+    const std::string log_file{"log.txt"};
 
-    // You don't need to change anything here. These lines are for checking program output.
+    // 次の行を変更する必要はありません。これらはプログラムの出力をチェックするためのものです。
     std::cout << pizzaSlices << std::endl;
     std::cout << pi << std::endl;
     std::cout << starsInTheUniverse << std::endl;
