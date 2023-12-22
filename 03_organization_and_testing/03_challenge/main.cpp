@@ -1,7 +1,7 @@
 #include <iostream>
 #include "math_operations.h"
 
-int dummy_main() {
+int main() {
   double a;
   double b;
   double result;
