@@ -25,4 +25,5 @@ int main() {
   }
 
   std::cout << "Result: " << result << std::endl;
+  return 0;
 }
